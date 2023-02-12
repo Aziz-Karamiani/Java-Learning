@@ -1,3 +1,5 @@
+import com.jabeh.video.Video;
+
 public class Main {
     public static void main(String[] args) {
         Employee employee = new Employee(1, 23, "Aziz", "Karamiani");
@@ -22,5 +24,9 @@ public class Main {
             if (book != null)
                 System.out.println(book.getTitle());
         }
+
+        Video video = new Video(123, "Video1", true, "https://jabeh.com/a.mp4", "https://jabeh.com/a.jpg");
+
+        System.out.println(video.getVideoUrl());
     }
 }
