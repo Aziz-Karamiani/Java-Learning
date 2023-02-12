@@ -6,5 +6,9 @@ public class Main {
         System.out.println(employee.getAge());
         System.out.println(employee.getFirstName());
         System.out.println(employee.getLastName());
+
+        System.out.println(employee.getMailingName());
+        System.out.println(employee.getMailingName(false));
+        System.out.println(employee.getMailingName(true));
     }
 }

@@ -42,4 +42,16 @@ public class Employee {
         this.firstName = firstName;
         this.lastName = lastName;
     }
+
+    public String getMailingName() {
+        return this.firstName + this.lastName;
+    }
+
+
+    public String getMailingName(boolean onlyFirstName) {
+        if (onlyFirstName)
+            return this.firstName;
+
+        return this.firstName + "@" + this.lastName;
+    }
 }
