@@ -20,5 +20,27 @@ public class Variables1 {
         Point pointB = new Point(20, 20);
         System.out.println("PointA = " + pointA);
         System.out.println("PointB = " + pointB);
+
+
+        // pass by value
+        int number1 = 21;
+        int number2 = number1;
+        System.out.println(number1);
+        System.out.println(number2);
+        number1 = 32;
+        System.out.println(number1);
+        System.out.println(number2);
+
+        // pass by value for object
+        Point p1 = new Point(100, 200);
+        Point p2 = p1;
+        p2.x = 300;
+        System.out.println(p1);
+        System.out.println(p2);
+
+        p2 = new Point(400, 500);
+        System.out.println(p1);
+        System.out.println(p2);
+
     }
 }
