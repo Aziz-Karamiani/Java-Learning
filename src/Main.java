@@ -1,5 +1,7 @@
 import com.jabeh.video.Video;
 
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
         Employee employee = new Employee(1, 23, "Aziz", "Karamiani");
@@ -28,5 +30,11 @@ public class Main {
         Video video = new Video(123, "Video1", true, "https://jabeh.com/a.mp4", "https://jabeh.com/a.jpg");
 
         System.out.println(video.getVideoUrl());
+
+
+        int[] numbers = new int[3];
+        System.out.println(numbers.length);
+        Arrays.fill(numbers, 1);
+        System.out.println(Arrays.toString(numbers));
     }
 }
