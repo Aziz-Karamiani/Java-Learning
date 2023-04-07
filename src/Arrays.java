@@ -4,5 +4,10 @@ public class Arrays {
         for (char c : myName) {
             System.out.print(c);
         }
+        System.out.println();
+        System.out.println("-----------");
+        for (int i = 0; i < myName.length; i++) {
+            System.out.print(myName[i]);
+        }
     }
 }
